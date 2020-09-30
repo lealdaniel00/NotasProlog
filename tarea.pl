@@ -1,7 +1,8 @@
+:-dynamic nota/2.
 notas():-
  write('Ingrese una nota '),  read(Nota), nl,
  write('Ingrese el porcentaje equivalente en decimales de la nota ingresada'),  read(Porcentaje), nl,
- asserta((nota(Nota,Porcentaje))),write('¿Desea incluir otra nota? (si/no)'),
+ asserta((nota(Nota,Porcentaje))),write('Â¿Desea incluir otra nota? (si/no)'),
  read(Respuesta),nl, ((Respuesta==si)->notas();true).
 
 def([],0).
